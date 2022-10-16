@@ -26,7 +26,7 @@
     $(document).ready(function () {
       $.ajax({
         type: "get",
-        url: "https://blog.tatsuya0902.net/feed/"
+        url: "https://blog.tatsuya0902.jp/feed/"
       }).done(function (result) {
         $(result).find("item").each(function () {
           $(".XMLSampleRequest").append('<a href="' + $(this).find('link').text() + '" target="_blank" rel="noopener noreferrer"><p style="text-decoration: none; color: #000000;">' + $(this).find('title').text() + '</p> </a>');
