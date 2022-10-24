@@ -10,11 +10,15 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://tatsuya0902.jp/contacts.html</loc>
+  <loc>https://tatsuya0902.jp/contacts</loc>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tatsuya0902.jp/status.html</loc>
+  <loc>https://tatsuya0902.jp/status</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tatsuya0902.jp/sns</loc>
   <priority>0.80</priority>
 </url>
 
