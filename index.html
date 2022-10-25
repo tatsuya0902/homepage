@@ -38,6 +38,21 @@
       });
     });
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(window).load(function() {
+    function changeWidget() {
+      var twFrame = $('iframe#twitter-widget-0');
+      if (twFrame.length > 0) {
+        twFrame.contents()
+        .find('head').append('<link href="【CSSファイルまでのパス】/tw.css" rel="stylesheet" type="text/css" media="all" />');
+      } else {
+        setTimeout(changeWidget, 1500);
+      }
+    }
+    changeWidget();
+  });
+  </script>
 </head>
 
 <body>
@@ -163,11 +178,16 @@
       <h1 style=" font-size:27px; text-align: center; margin-top: 20px; margin-bottom: 20px;"><font color="#373b3e">Twitter</font></h1>
       <div style="display:flex; flex-direction: row; justify-content: center;">
         <div style="text-align: center;">
-          <a class="twitter-timeline" data-width="310" data-height="480" data-theme="light"
-            href="https://twitter.com/fuchiy0902?ref_src=twsrc%5Etfw" data-chrome="transparent">Tweets by fuchiy0902</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
       </div>
+
+      <div style="text-align: center;>
+      <div class="iframe-responsive">
+      <a class="twitter-timeline" data-width="310" data-height="480" data-theme="light"
+      href="https://twitter.com/fuchiy0902?ref_src=twsrc%5Etfw" data-chrome="transparent">Tweets by fuchiy0902</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    </div>
 
       <div style=" border-style: solid;
        border-right-style: hidden;
