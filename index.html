@@ -38,6 +38,21 @@
       });
     });
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(window).load(function() {
+    function changeWidget() {
+      var twFrame = $('iframe#twitter-widget-0');
+      if (twFrame.length > 0) {
+        twFrame.contents()
+        .find('head').append('<link href="【CSSファイルまでのパス】/tw.css" rel="stylesheet" type="text/css" media="all" />');
+      } else {
+        setTimeout(changeWidget, 1500);
+      }
+    }
+    changeWidget();
+  });
+  </script>
 </head>
 
 <body>
