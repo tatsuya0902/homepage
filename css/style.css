@@ -148,3 +148,12 @@ th {
 .wf-nicomoji { font-family: "Nico Moji"; }
 .wf-notosansjapanese { font-family: "Noto Sans JP"; }
 .wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
+
+@font-face {
+  font-family: 'Shalimar';
+  src: url('assets\fonts\Shalimar-Regular.woff2') format('woff2');
+}
+
+.Shalimar {
+	font-family: Shalimar;
+}
