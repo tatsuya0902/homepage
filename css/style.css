@@ -167,3 +167,37 @@ th {
 }
 
 .mochiy {font-family: 'Mochiy Pop One';}
+
+.daimei {
+  border-style: solid;
+  border-right-color: #373b3e;
+  border-left-color: #373b3e; 
+  border-bottom-color: #e12885;
+  border-top-width: 3px;
+  border-bottom-width: 2px ;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #86cecb;"
+}
+
+.yokosen1{
+  border-style: solid;
+  border-right-style: hidden;
+  border-left-style: hidden; 
+  border-bottom-style: hidden;
+  border-width: 1px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  color: #373b3e;"
+}
+
+.yokosen2 {
+  border-style: solid;
+  border-right-style: hidden;
+  border-left-style: hidden; 
+  border-bottom-style: hidden;
+  border-width: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #373b3e;"
+}
