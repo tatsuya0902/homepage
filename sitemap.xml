@@ -17,6 +17,13 @@
   <loc>https://tatsuya0902.jp/socialmedia</loc>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://tatsuya0902.jp/contact</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tatsuya0902.jp/about</loc>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
