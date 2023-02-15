@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>tatsuya0902 - ホームページ</title>
+	<meta name="description" content="tatsuya0902のホームページ">
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="css/style.css" rel="stylesheet">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9RKNCHG1QG"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'G-9RKNCHG1QG');
+	</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function () {
+		      $.ajax({
+		        type: "get",
+		        url: "https://blog.tatsuya0902.jp/feed/"
+		      }).done(function (result) {
+		        $(result).find("item").each(function () {
+		          $(".XMLSampleRequest").append('<a href="' + $(this).find('link').text() + '" target="_blank" rel="noopener noreferrer"><p style="text-decoration: none; color: #000000;">' + $(this).find('title').text() + '</p> </a>');
+		        });
+		        console.log(result);
+		      });
+		    });
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+</head>
+
+<body>
+	<span data-nosnippet>
+  <header>
+    <div class="navbar-fixed">
+      <nav class="ghatune" role="navigation">
+        <div class="nav-wrapper container"><a href="/" class="brand-logo">
+            <img src="/assets/logo.svg" style="max-width: 100%; height: 64px;">
+          </a>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+            <script>
+              $(document).ready(function () {
+                $('.sidenav').sidenav();
+              });
+            </script><i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+			<li><a href="https://tatsuya0902.jp/machine">所持端末</a></li>
+			<li><a href="https://blog.tatsuya0902.jp" target="_blank" rel="noopener noreferrer">ブログ</a></li>
+			<li><a href="https://tatsuya0902.jp/socialmedia">ソーシャルメディア</a></li>
+			<li><a href="https://tatsuya0902.jp/status">サーバー稼働状況</a></li>
+			<li><a href="https://tatsuya0902.jp/contact">お問い合わせ</a></li>
+			<li><a href="https://tatsuya0902.jp/about">概要</a></li>
+		</ul>
+		<ul id="nav-mobile" class="sidenav">
+			<li><a href="https://tatsuya0902.jp/machine">所持端末</a></li>
+			<li><a href="https://blog.tatsuya0902.jp" target="_blank" rel="noopener noreferrer">ブログ</a></li>
+			<li><a href="https://tatsuya0902.jp/socialmedia">ソーシャルメディア</a></li>
+			<li><a href="https://tatsuya0902.jp/status">サーバー稼働状況</a></li>
+			<li><a href="https://tatsuya0902.jp/contact">お問い合わせ</a></li>
+			<li><a href="https://tatsuya0902.jp/about">概要</a></li>
+		</ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <div class="daimei notosansjp">
+          <h1 style=" font-size:27px; text-align: center; margin-top: 8px; margin-bottom: 10px;"><font color="#373b3e">ようこそ</span>ホームページへ</font>
+	</h1>
+	</div>
+	<div class="notosansjp" style="display:flex; flex-direction: row; justify-content: center;">
+		<p style=" margin-bottom: 20px; font-size:16px;">
+			2014年3月18日:PSNアカウントにてtatsuya_0902を名乗る<br> 2016年:Google+にて活動(~2019年4月2日)
+			<br> 2021年10月10日:ホームページ開設
+			<br> 2021年12月14日:新ホームページ公開
+			<br> 今に至る。
+		</p>
+	</div>
+
+	<div class="daimei notosansjp">
+		<h1 style=" font-size:27px; text-align: center; margin-top: 8px; margin-bottom: 10px;">
+			<font color="#373b3e">ブログ新着投稿</font>
+		</h1>
+	</div>
+	<article class="new">
+		<div class="XMLSampleRequest" style="text-align: center; font-size: 20px;">
+
+		</div>
+	</article>
+
+	<div class="daimei notosansjp">
+		<p style="text-align: center; font-size: 27px; margin-top: 8px; margin-bottom: 8px;">
+			<font color="#373b3e">こんにちわ!!</font>
+		</p>
+	</div>
+	<div style="display:flex; flex-direction: row; justify-content: center;">
+		<img src="assets/tatsuya0902.webp" width="124" height="124" alt="">
+		<p class="notosansjp" style="font-size: 20px;">
+			<span>達也です。</span><br>
+			<span>PCGFに所属してます。</span><br>
+			<span>主に</span><span>twitterが</span><span>メインでやってます。</span><br>
+			<span>mastodonの達也ドンもメインです。</span><br> よろしくお願いします。
+			<br>
+		</p>
+	</div>
+	<p class="notosansjp" style="font-size: 20px; text-align: center; margin-top: 0px;">
+		<a rel="me" href="https://mstdn.tatsuya0902.jp/@tatsuya0902" target="_blank">達也ドンはこちら</a>
+	</p>
+
+	<h1 class="wf-nicomoji" style=" font-size:50px; text-align: center; margin-bottom: 10px; margin-top: 0px;">
+		<font color="#373b3e">ぷろふぃーるかーど</font>
+	</h1>
+
+	<div class="notosansjp" style="max-width:600px; margin-left: auto; margin-right: auto;">
+		<table>
+			<tbody>
+				<tr>
+					<td>名前</td>
+					<td>達也</td>
+				</tr>
+				<tr>
+					<td>体重</td>
+					<td>104.8kg</td>
+				</tr>
+				<tr>
+					<td>身長</td>
+					<td>169.4cm</td>
+				</tr>
+				<tr>
+					<td>血液型</td>
+					<td>O型 RH+</td>
+				</tr>
+				<tr>
+					<td>肝臓</td>
+					<td>悪い</td>
+				</tr>
+				<tr>
+					<td>好きな食べ物</td>
+					<td>焼肉</td>
+				</tr>
+				<tr>
+					<td>好きな歌手</td>
+					<td>SEKAI NO OWARI</td>
+				</tr>
+				<tr>
+					<td>趣味</td>
+					<td>アマチュア無線　車</td>
+				</tr>
+				<tr>
+					<td>職業</td>
+					<td>会社員　技術職</td>
+				</tr>
+				<tr>
+					<td>座右の銘</td>
+					<td>一期一会</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div style=" border-style: solid;
+      border-right-style: hidden;
+      border-left-style: hidden; 
+      border-bottom-style: hidden;
+      border-width: 1px;
+      margin: 10px;
+      margin-top: 50px;
+      color: #999999;">
+	</div>
+
+	<h1 class="notosansjp" style=" font-size:27px; text-align: center; margin-top: 20px; margin-bottom: 0px;">
+		<font color="#373b3e">PCGFとは</font>
+	</h1>
+
+	<div class="notosansjp" style="display:flex; flex-direction: row; justify-content: center;">
+		<img src="assets/pcgf.webp" width="70%" height="auto">
+	</div>
+	<div data-focusable="true" tabindex="0" class="r-1loqt21 r-1otgn73 r-1i6wzkk r-lrvibr css-1dbjc4n" style="align-items: center; background-color: rgb(255, 255, 255); border-radius: 2px; flex-direction: column; margin: 10px; -webkit-box-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; opacity: 1; transition-duration: 0.25s;">
+		<div dir="auto" class="css-901oao">PCGFは学生時代のお金無しが集まったガジェット集団です。現在はOSSを活用したソーシャルサービスの建築や広報活動、ガジェット情報の連絡、MNGなどをしております。</div>
+		<div class="css-1dbjc4n" style="margin: 2px;"></div>
+		<div dir="auto" class="css-901oao">主な活動場所はMattermostやMastodonで活発な情報共有、オフラインではオープンソースカンファレンスでブースを展開しております。</div>
+	</div>
+	<p class="notosansjp" style="font-size: 20px; text-align: center;">
+		<a href="https://pcgf.io">PCGFはこちら！！</a>
+	</p>
+
+	<div class="footer">
+		<div class="yokosen1">
+		</div>
+		<p style="text-align: center; font-size: 15px;">
+			<font color="#226e93">ページ情報</font><br>
+		</p>
+		<div style="text-align: center; margin-top:0px;">
+			<img src="https://img.shields.io/github/commits-since/tatsuya0902/homepage/latest?color=informational&include_prereleases&label=commit&logo=github"><br>
+			<p style="margin-top: 0px;">
+				Github Repository:<a href="https://github.com/tatsuya0902/homepage/commits/main" target="_blank" rel="noopener noreferrer">here</a>
+			</p>
+		</div>
+		<div class="yokosen2">
+		</div>
+		<p style="text-align: center;">
+			<span>Copyright</span> <span>©</span> <span>2021-2022</span> <span>tatsuya0902</span> <span>All</span>
+			<span>rights</span> <span>reserved.
+		  </p>
+		</div>
+      <script type="text/javascript" src="js/materialize.js"></script>
+    </span>
+</body>
+
+</html>
