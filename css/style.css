@@ -198,3 +198,44 @@ a {
   font-family: "Noto Sans JP";
 }
 
+
+/*rintan*/
+.item-with-badge {
+  display: inline-block;
+  width: 100%
+}
+
+.item-with-badge {
+
+}
+
+.card-panel {
+  overflow-wrap: break-word
+}
+
+.card-panel .valign-wrapper {
+  margin-bottom: 0
+}
+
+.card-panel h2 {
+  margin-top: 0
+}
+
+.card-panel .collection {
+  margin: 0 -24px;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  border-radius: 0
+}
+
+.card-panel .collection .collection-item {
+  padding: 24px
+}
+
+.card-panel .collection .collection-item:last-child {
+  padding-bottom: 0
+}
+
+@media only screen and (max-width: 750px) {
+  img { max-width: 100%; }
+}
