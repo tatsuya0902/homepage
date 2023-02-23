@@ -22,6 +22,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src="js/clipboard.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -71,148 +73,154 @@
                     </h1>
                 </div>
                 <div style="margin-top: 20px; text-align: center;">
-            </div>
+                </div>
 
-            <div style="width:90%; margin-left: auto; margin-right: auto; max-width: 500px;">
+                <div style="width:90%; margin-left: auto; margin-right: auto; max-width: 500px;">
 
-                <div class="icon-block center col s12">
-                    <div class="card-panel">
-                        <img alt="mastodon-logo" src="img/mastodon.svg" height="56px"></a>
-                        <h4>
-                            <p>Mastodon</p>
-                        </h4>
-                        <ul class="collection">
-                            <li class="collection-item">
-                                <span glot-model="main" class="new badge orange darken-1"
-                                    data-badge-caption="">メイン</span>
-                                <h5>
-                                    <p style="display:inline-block; width:100%" class="black-text">達也ドン</p>
-                                </h5>
-                                <p>
-                                </p>
-                                <div class="chip">
-                                    <a href="#!" class="copy-btn tooltipped grey-text text-darken-1"
-                                        data-position="bottom" data-tooltip="Copy to clipboard"
-                                        data-clipboard-text="@tatsuya0902@mstdn.tatsuya0902.jp"
-                                        onclick="M.toast({unsafeHTML: 'Copied!'})">@tatsuya0902@mstdn.tatsuya0902.jp</a>
-                                </div>
-                                <p></p>
-                                <a glot-model="follow" class="waves-effect waves-light btn"
-                                    href="https://mstdn.tatsuya0902.jp/@tatsuya0902" target="_blank"
-                                    rel="noopener noreferrer">フォロー</a>
-                            </li>
-                            <li class="collection-item">
-                                <h5>
-                                    <p class="black-text">Yづドン</a>
-                                </h5>
-                                <p>
-                                </p>
-                                <div class="chip">
-                                    <a href="#!" class="copy-btn tooltipped grey-text text-darken-1"
-                                        data-position="bottom" data-tooltip="Copy to clipboard"
-                                        data-clipboard-text="@tatsuya0902@mstdn.y-zu.org"
-                                        onclick="M.toast({unsafeHTML: 'Copied!'})">@tatsuya0902@mstdn.y-zu.org</a>
-                                </div>
-                                <p></p>
-                                <a glot-model="follow" class="waves-effect waves-light btn"
-                                    href="https://mstdn.y-zu.org/@tatsuya0902" target="_blank"
-                                    rel="noopener noreferrer">フォロー</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="card-panel">
-                        <img alt="line-logo" src="img/LINE.png" height="56px"></a>
-                        <h4>
-                            <p class="black-text">LINE(LINE Works)</a>
-                        </h4>
-                        <p>
-                        </p>
-                        <div class="chip">
-                            <a href="#!" class="copy-btn tooltipped grey-text text-darken-1" data-position="bottom"
-                                data-tooltip="Copy to clipboard" data-clipboard-text="tatsuya@tatsuya0902"
-                                onclick="M.toast({unsafeHTML: 'Copied!'})">tatsuya@tatsuya0902</a>
+                    <div class="icon-block center col s12">
+                        <div class="card-panel">
+                            <img alt="mastodon-logo" src="img/mastodon.svg" height="56px"></a>
+                            <h4>
+                                <p>Mastodon</p>
+                            </h4>
+                            <ul class="collection">
+                                <li class="collection-item">
+                                    <span glot-model="main" class="new badge orange darken-1"
+                                        data-badge-caption="">メイン</span>
+                                    <h5>
+                                        <p style="display:inline-block; width:100%" class="black-text">達也ドン</p>
+                                    </h5>
+                                    <p>
+                                    </p>
+                                    <div class="chip">
+                                        <a href="#!" class="copy-btn tooltipped grey-text text-darken-1"
+                                            data-position="bottom" data-tooltip="Copy to clipboard"
+                                            data-clipboard-text="@tatsuya0902@mstdn.tatsuya0902.jp"
+                                            onclick="M.toast({unsafeHTML: 'Copied!'})">@tatsuya0902@mstdn.tatsuya0902.jp</a>
+                                    </div>
+                                    <p></p>
+                                    <a glot-model="follow" class="waves-effect waves-light btn"
+                                        href="https://mstdn.tatsuya0902.jp/@tatsuya0902" target="_blank"
+                                        rel="noopener noreferrer">フォロー</a>
+                                </li>
+                                <li class="collection-item">
+                                    <h5>
+                                        <p class="black-text">Yづドン</a>
+                                    </h5>
+                                    <p>
+                                    </p>
+                                    <div class="chip">
+                                        <a href="#!" class="copy-btn tooltipped grey-text text-darken-1"
+                                            data-position="bottom" data-tooltip="Copy to clipboard"
+                                            data-clipboard-text="@Rintan@mstdn.y-zu.org"
+                                            onclick="M.toast({unsafeHTML: 'Copied!'})">@Rintan@mstdn.y-zu.org</a>
+                                    </div>
+                                    <p></p>
+                                    <a glot-model="follow" class="waves-effect waves-light btn"
+                                        href="https://mstdn.y-zu.org/@tatsuya0902" target="_blank"
+                                        rel="noopener noreferrer">フォロー</a>
+                                </li>
+                            </ul>
                         </div>
-                        <p></p>
-                        <a glot-model="follow" class="waves-effect waves-light btn"
-                            href="https://works.do/R/ti/p/tatsuya@tatsuya0902" target="_blank"
-                            rel="noopener noreferrer">フォロー</a>
-                    </div>
 
-                    <div class="card-panel">
-                        <img alt="pixelfed-logo" src="img/pixelfed.svg" height="56px"></a>
-                        <h4>
-                            <p class="black-text">Pixelfed.Tokyo</a>
-                        </h4>
-                        <p>
-                        </p>
-                        <div class="chip">
-                            <a href="#!" class="copy-btn tooltipped grey-text text-darken-1" data-position="bottom"
-                                data-tooltip="Copy to clipboard" data-clipboard-text="達也#5499"
-                                onclick="M.toast({unsafeHTML: 'Copied!'})">@tatsuya0902@pixelfed.tokyo</a>
+                        <div class="card-panel">
+                            <img alt="line-logo" src="img/LINE.png" height="56px"></a>
+                            <h4>
+                                <p class="black-text">LINE(LINE Works)</a>
+                            </h4>
+                            <p>
+                            </p>
+                            <div class="chip">
+                                <a href="#!" class="copy-btn tooltipped grey-text text-darken-1" data-position="bottom"
+                                    data-tooltip="Copy to clipboard" data-clipboard-text="tatsuya@tatsuya0902"
+                                    onclick="M.toast({unsafeHTML: 'Copied!'})">tatsuya@tatsuya0902</a>
+                            </div>
+                            <p></p>
+                            <a glot-model="follow" class="waves-effect waves-light btn"
+                                href="https://works.do/R/ti/p/tatsuya@tatsuya0902" target="_blank"
+                                rel="noopener noreferrer">フォロー</a>
                         </div>
-                        <p></p>
-                        <a glot-model="follow" class="waves-effect waves-light btn "
-                            href="https://pixelfed.tokyo/tatsuya0902" target="_blank"
-                            rel="noopener noreferrer">フォロー</a>
-                    </div>
 
-                    <div class="card-panel">
-                        <img alt="discord-logo" src="img/discord.svg" height="56px"></a>
-                        <h4>
-                            <p class="black-text">Discord</a>
-                        </h4>
-                        <p>
-                        </p>
-                        <div class="chip">
-                            <a href="#!" class="copy-btn tooltipped grey-text text-darken-1" data-position="bottom"
-                                data-tooltip="Copy to clipboard" data-clipboard-text="達也#5499"
-                                onclick="M.toast({unsafeHTML: 'Copied!'})">達也#5499</a>
+                        <div class="card-panel">
+                            <img alt="pixelfed-logo" src="img/pixelfed.svg" height="56px"></a>
+                            <h4>
+                                <p class="black-text">Pixelfed.Tokyo</a>
+                            </h4>
+                            <p>
+                            </p>
+                            <div class="chip">
+                                <a href="#!" class="copy-btn tooltipped grey-text text-darken-1" data-position="bottom"
+                                    data-tooltip="Copy to clipboard" data-clipboard-text="達也#5499"
+                                    onclick="M.toast({unsafeHTML: 'Copied!'})">@tatsuya0902@pixelfed.tokyo</a>
+                            </div>
+                            <p></p>
+                            <a glot-model="follow" class="waves-effect waves-light btn "
+                                href="https://pixelfed.tokyo/tatsuya0902" target="_blank"
+                                rel="noopener noreferrer">フォロー</a>
                         </div>
-                        <p></p>
-                        <a glot-model="follow" class="waves-effect waves-light btn"
-                            href="https://discordapp.com/users/313205168898572291" target="_blank"
-                            rel="noopener noreferrer">フォロー</a>
-                    </div>
 
-                    <div class="card-panel">
-                        <img alt="twitter-logo" src="img/twitter.svg" height="56px"></a>
-                        <h4><p class="black-text">Twitter</p></h4>
-                        <p glot-model="twitter-description">Twitterは現在CEOの方針により、<br>アカウントが消える可能性があるため、<br>重要な連絡には使用しないでください。</p>
-                        <p></p>
-                        <div class="chip">
-                            <a href="#!" class="copy-btn tooltipped grey-text text-darken-1" data-position="bottom"
-                                data-tooltip="Copy to clipboard" data-clipboard-text="@fuchiy0902"
-                                onclick="M.toast({unsafeHTML: 'Copied!'})">@fuchiy0902</a>
+                        <div class="card-panel">
+                            <img alt="discord-logo" src="img/discord.svg" height="56px"></a>
+                            <h4>
+                                <p class="black-text">Discord</a>
+                            </h4>
+                            <p>
+                            </p>
+                            <div class="chip">
+                                <a href="#!" class="copy-btn tooltipped grey-text text-darken-1" data-position="bottom"
+                                    data-tooltip="Copy to clipboard" data-clipboard-text="達也#5499"
+                                    onclick="M.toast({unsafeHTML: 'Copied!'})">達也#5499</a>
+                            </div>
+                            <p></p>
+                            <a glot-model="follow" class="waves-effect waves-light btn"
+                                href="https://discordapp.com/users/313205168898572291" target="_blank"
+                                rel="noopener noreferrer">フォロー</a>
                         </div>
-                        <p></p>
-                        <a glot-model="follow" class="waves-effect waves-light btn" href="https://twitter.com/fuchiy0902" target="_blank" rel="noopener noreferrer">フォロー</a>
+
+                        <div class="card-panel">
+                            <img alt="twitter-logo" src="img/twitter.svg" height="56px"></a>
+                            <h4>
+                                <p class="black-text">Twitter</p>
+                            </h4>
+                            <p glot-model="twitter-description">
+                                Twitterは現在CEOの方針により、<br>アカウントが消える可能性があるため、<br>重要な連絡には使用しないでください。</p>
+                            <p></p>
+                            <div class="chip">
+                                <a href="#!" class="copy-btn tooltipped grey-text text-darken-1" data-position="bottom"
+                                    data-tooltip="Copy to clipboard" data-clipboard-text="@fuchiy0902"
+                                    onclick="M.toast({unsafeHTML: 'Copied!'})">@fuchiy0902</a>
+                            </div>
+                            <p></p>
+                            <a glot-model="follow" class="waves-effect waves-light btn"
+                                href="https://twitter.com/fuchiy0902" target="_blank" rel="noopener noreferrer">フォロー</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="notosansjp">
-                <div class="yokosen1"></div>
-                <p style="text-align: center; font-size: 16px;">
-                    <font color="#226e93">ページ情報</font><br>
-                </p>
-                <div style="text-align: center; margin-top:0px;">
-                    <img
-                        src="https://img.shields.io/github/commits-since/tatsuya0902/homepage/20c46c0b5f8be60978c1b8ca4cfe2232dcf8ddb1?color=%2386cecb&include_prereleases&label=commits&logo=github"><br>
-                    <p style="margin-top: 0px;">
-                        Github Repository:<a href="https://github.com/tatsuya0902/homepage/commits/main" target="_blank"
-                            rel="noopener noreferrer">here</a>
+                <div class="notosansjp">
+                    <div class="yokosen1"></div>
+                    <p style="text-align: center; font-size: 16px;">
+                        <font color="#226e93">ページ情報</font><br>
+                    </p>
+                    <div style="text-align: center; margin-top:0px;">
+                        <img
+                            src="https://img.shields.io/github/commits-since/tatsuya0902/homepage/20c46c0b5f8be60978c1b8ca4cfe2232dcf8ddb1?color=%2386cecb&include_prereleases&label=commits&logo=github"><br>
+                        <p style="margin-top: 0px;">
+                            Github Repository:<a href="https://github.com/tatsuya0902/homepage/commits/main"
+                                target="_blank" rel="noopener noreferrer">here</a>
+                        </p>
+                    </div>
+                    <div class="yokosen2">
+                    </div>
+                    <p style="text-align: center;">
+                        <span>Copyright</span> <span>©</span> <span>2021-2022</span> <span>tatsuya0902</span>
+                        <span>All</span>
+                        <span>rights</span> <span>reserved.</span>
                     </p>
                 </div>
-                <div class="yokosen2">
-                </div>
-                <p style="text-align: center;">
-                    <span>Copyright</span> <span>©</span> <span>2021-2022</span> <span>tatsuya0902</span>
-                    <span>All</span>
-                    <span>rights</span> <span>reserved.</span>
-                </p>
-            </div>
-            <script type="text/javascript" src="js/materialize.js"></script>
+                <script type="text/javascript" src="js/clipboard.min.js"></script>
+                <script src="js/init.min.js"></script>
+                <script type="text/javascript" src="js/materialize.js"></script>
     </span>
 </body>
 
